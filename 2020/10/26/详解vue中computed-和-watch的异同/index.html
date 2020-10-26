@@ -79,13 +79,15 @@
 
 
 
-<meta name="description" content="学无止境">
-<meta property="og:type" content="website">
-<meta property="og:title" content="小书童的学习日志">
-<meta property="og:url" content="http://example.com/index.html">
+<meta name="description" content="computed：通过属性计算而得来的属性 1、computed内部的函数在调用时不加()。   2、computed是依赖vm中data的属性变化而变化的，也就是说，当data中的属性发生改变的时候，当前函数才会执行，data中的属性没有改变的时候，当前函数不会执行。   3、computed中的函数必须用return返回。   4、在computed中不要对data中的属性进行赋值操作。如果对">
+<meta property="og:type" content="article">
+<meta property="og:title" content="详解vue中computed 和 watch的异同">
+<meta property="og:url" content="http://example.com/2020/10/26/%E8%AF%A6%E8%A7%A3vue%E4%B8%ADcomputed-%E5%92%8C-watch%E7%9A%84%E5%BC%82%E5%90%8C/index.html">
 <meta property="og:site_name" content="小书童的学习日志">
-<meta property="og:description" content="学无止境">
+<meta property="og:description" content="computed：通过属性计算而得来的属性 1、computed内部的函数在调用时不加()。   2、computed是依赖vm中data的属性变化而变化的，也就是说，当data中的属性发生改变的时候，当前函数才会执行，data中的属性没有改变的时候，当前函数不会执行。   3、computed中的函数必须用return返回。   4、在computed中不要对data中的属性进行赋值操作。如果对">
 <meta property="og:locale">
+<meta property="article:published_time" content="2020-10-26T05:59:19.000Z">
+<meta property="article:modified_time" content="2020-10-26T05:59:35.108Z">
 <meta property="article:author" content="小书童">
 <meta name="twitter:card" content="summary">
 
@@ -117,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://example.com/"/>
+  <link rel="canonical" href="http://example.com/2020/10/26/详解vue中computed-和-watch的异同/"/>
 
 
 
 
 
-  <title>小书童的学习日志</title>
+  <title>详解vue中computed 和 watch的异同 | 小书童的学习日志</title>
   
 
 
@@ -142,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -246,9 +247,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -278,9 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/10/26/%E8%AF%A6%E8%A7%A3vue%E4%B8%ADcomputed-%E5%92%8C-watch%E7%9A%84%E5%BC%82%E5%90%8C/" itemprop="url">详解vue中computed 和 watch的异同</a></h1>
+          <h1 class="post-title" itemprop="name headline">详解vue中computed 和 watch的异同</h1>
         
 
         <div class="post-meta">
@@ -330,9 +329,7 @@
       
 
       
-        
-          
-            <h1 id="computed：通过属性计算而得来的属性"><a href="#computed：通过属性计算而得来的属性" class="headerlink" title="computed：通过属性计算而得来的属性"></a>computed：通过属性计算而得来的属性</h1><blockquote>
+        <h1 id="computed：通过属性计算而得来的属性"><a href="#computed：通过属性计算而得来的属性" class="headerlink" title="computed：通过属性计算而得来的属性"></a>computed：通过属性计算而得来的属性</h1><blockquote>
 <p>1、computed内部的函数在调用时不加()。</p>
 </blockquote>
 <blockquote>
@@ -376,8 +373,6 @@
 <p>4、使用场景：computed—-当一个属性受多个属性影响的时候，使用computed——-购物车商品结算。watch—-当一条数据影响多条数据的时候，使用watch——-搜索框。</p>
 </blockquote>
 
-          
-        
       
     </div>
     
@@ -394,160 +389,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/14/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8Bflex/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小书童的学习日志">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/10/14/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8Bflex/" itemprop="url">js防抖与节流</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-10-14T10:32:31+08:00">
-                2020-10-14
-              </time>
+              <a href="/2020/10/14/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8Bflex/" rel="next" title="js防抖与节流">
+                <i class="fa fa-chevron-left"></i> js防抖与节流
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <blockquote>
-<p>日常开发过程中，滚动事件做复杂计算频繁调用回调函数很可能会造成页面的卡顿，这时候我们更希望把多次计算合并成一次，只操作一个精确点，JS把这种方式称为debounce（防抖）和throttle（节流）</p>
-</blockquote>
-<ul>
-<li>函数防抖<blockquote>
-<p>当持续触发事件时，一定时间段内没有再触发事件，事件处理函数才会执行一次，如果设定时间到来之前，又触发了事件，就重新开始延时。也就是说当一个用户一直触发这个函数，且每次触发函数的间隔小于既定时间，那么防抖的情况下只会执行一次。</p>
-</blockquote>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">function debounce(fn, wait) &#123;</span><br><span class="line">    var timeout &#x3D; null;      &#x2F;&#x2F;定义一个定时器</span><br><span class="line">    return function() &#123;</span><br><span class="line">        if(timeout !&#x3D;&#x3D; null) </span><br><span class="line">                clearTimeout(timeout);  &#x2F;&#x2F;清除这个定时器</span><br><span class="line">        timeout &#x3D; setTimeout(fn, wait);  </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; 处理函数</span><br><span class="line">function handle() &#123;</span><br><span class="line">    console.log(Math.random()); </span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; 滚动事件</span><br><span class="line">window.addEventListener(&#39;scroll&#39;, debounce(handle, 1000));</span><br></pre></td></tr></table></figure>
-
-<p>当持续触发scroll函数，handle函数只会在1秒时间内执行一次，在滚动过程中并没有持续执行，有效减少了性能的损耗</p>
-<ul>
-<li>函数节流</li>
-</ul>
-<blockquote>
-<p>当持续触发事件时，保证在一定时间内只调用一次事件处理函数，意思就是说，假设一个用户一直触发这个函数，且每次触发小于既定值，函数节流会每隔这个时间调用一次<br>用一句话总结防抖和节流的区别：防抖是将多次执行变为最后一次执行，节流是将多次执行变为每隔一段时间执行<br>实现函数节流我们主要有两种方法：时间戳和定时器</p>
-</blockquote>
-<p>例如</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">var throttle &#x3D; function(func, delay) &#123;</span><br><span class="line">    var prev &#x3D; Date.now();</span><br><span class="line">    return function() &#123;</span><br><span class="line">        var context &#x3D; this;   &#x2F;&#x2F;this指向window</span><br><span class="line">        var args &#x3D; arguments;</span><br><span class="line">        var now &#x3D; Date.now();</span><br><span class="line">        if (now - prev &gt;&#x3D; delay) &#123;</span><br><span class="line">            func.apply(context, args);</span><br><span class="line">            prev &#x3D; Date.now();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">function handle() &#123;</span><br><span class="line">    console.log(Math.random());</span><br><span class="line">&#125;</span><br><span class="line">window.addEventListener(&#39;scroll&#39;, throttle(handle, 1000));</span><br></pre></td></tr></table></figure>
-
-<p>这个节流函数利用时间戳让第一次滚动事件执行一次回调函数，此后每隔1000ms执行一次，在小于1000ms这段时间内的滚动是不执行的</p>
-<p>再举一个定时器的例子：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">var throttle &#x3D; function(func, delay) &#123;</span><br><span class="line">    var timer &#x3D; null;</span><br><span class="line">    return function() &#123;</span><br><span class="line">        var context &#x3D; this;</span><br><span class="line">        var args &#x3D; arguments;</span><br><span class="line">        if (!timer) &#123;</span><br><span class="line">            timer &#x3D; setTimeout(function() &#123;</span><br><span class="line">                func.apply(context, args);</span><br><span class="line">                timer &#x3D; null;</span><br><span class="line">            &#125;, delay);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">function handle() &#123;</span><br><span class="line">    console.log(Math.random());</span><br><span class="line">&#125;</span><br><span class="line">window.addEventListener(&#39;scroll&#39;, throttle(handle, 1000));</span><br></pre></td></tr></table></figure>
-
-<p>当触发事件的时候，我们设置了一个定时器，在没到1000ms之前这个定时器为null，而到了规定时间执行这个函数并再次把定时器清除。也就是说当第一次触发事件，到达规定时间再执行这个函数，执行之后马上清除定时器，开始新的循环，那么我们看到的效果就是，滚动之后没有马上打印，而是等待1000ms打印，有一个延迟的效果，并且这段时间滚动事件不会执行函数。</p>
-<p>单用时间戳或者定时器都有缺陷，我们更希望第一次触发马上执行函数，最后一次触发也可以执行一次事件处理函数</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">var throttle &#x3D; function(func, delay) &#123;</span><br><span class="line">     var timer &#x3D; null;</span><br><span class="line">     var startTime &#x3D; Date.now();  &#x2F;&#x2F;设置开始时间</span><br><span class="line">     return function() &#123;</span><br><span class="line">             var curTime &#x3D; Date.now();</span><br><span class="line">             var remaining &#x3D; delay - (curTime - startTime);  &#x2F;&#x2F;剩余时间</span><br><span class="line">             var context &#x3D; this;</span><br><span class="line">             var args &#x3D; arguments;</span><br><span class="line">             clearTimeout(timer);</span><br><span class="line">              if (remaining &lt;&#x3D; 0) &#123;      &#x2F;&#x2F; 第一次触发立即执行</span><br><span class="line">                    func.apply(context, args);</span><br><span class="line">                    startTime &#x3D; Date.now();</span><br><span class="line">              &#125; else &#123;</span><br><span class="line">                    timer &#x3D; setTimeout(func, remaining);   &#x2F;&#x2F;取消当前计数器并计算新的remaining</span><br><span class="line">              &#125;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br><span class="line">function handle() &#123;</span><br><span class="line">      console.log(Math.random());</span><br><span class="line">&#125;</span><br><span class="line"> window.addEventListener(&#39;scroll&#39;, throttle(handle, 1000));</span><br></pre></td></tr></table></figure>
-
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -557,10 +420,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -568,6 +432,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -588,8 +456,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -631,6 +508,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#computed%EF%BC%9A%E9%80%9A%E8%BF%87%E5%B1%9E%E6%80%A7%E8%AE%A1%E7%AE%97%E8%80%8C%E5%BE%97%E6%9D%A5%E7%9A%84%E5%B1%9E%E6%80%A7"><span class="nav-number">1.</span> <span class="nav-text">computed：通过属性计算而得来的属性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#watch%EF%BC%9A%E5%B1%9E%E6%80%A7%E7%9B%91%E5%90%AC"><span class="nav-number">2.</span> <span class="nav-text">watch：属性监听</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="nav-number">3.</span> <span class="nav-text">区别：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -764,6 +657,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
